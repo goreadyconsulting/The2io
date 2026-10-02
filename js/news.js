@@ -33,7 +33,7 @@
           link.href = item.link_url;
           link.target = "_blank";
           link.rel = "noreferrer";
-          link.textContent = "OPEN SOURCE ↗";
+          link.textContent = item.link_text || "OPEN SOURCE ↗";
           article.appendChild(link);
         }
         stream.appendChild(article);
